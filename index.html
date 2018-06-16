@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Type or Death Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="top">
+       <div class="container-fluid">
+         <ul class="nav navbar-nav">
+           <li class="active" align="center"><a href="#">Type or Death</a></li>
+         </ul>
+       </div>
+     </nav>
+
+    <div class="container">
+
+      <!-- Game Title Section -->
+      <section id="yes">
+        <div class="detailsDisplay">
+          <div class="levelDisplay">
+            <p> Level <span id="level"></span></p>
+          </div>
+          <div class="scoreDisplay">
+            <p>Your score is: <span id="score">0</span> points</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Word Array Display Section -->
+      <section class="wordArraySection">
+        <div class="wordDisplayContainer">
+          <span id="words">Are You Ready...!!</span>
+        </div>
+      </section>
+
+      <!-- Inputs Section -->
+      <section class="inputSection">
+        <label for="">
+          <span class="smallType">Type Words Here</span>
+          <input id="wordInput" type="text"></input>
+        </label>
+      <div class="buttons">
+        <button id="start" class="startButton" id="but" onclick="startGame()">Click to Start</button>
+        <button id="restart" class="restartButton" id="but" onclick="restartGame()">Restart</button>
+        <button id="end" class="restartButton" id="but" onclick="endGame()">End Game</button>
+      </div>
+      </section>
+    </div>
+
+    <div class="progressContainer">
+      <span id="progressBar"></span>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="scripts.js"></script>
+
+  </body>
+
+</html>
